@@ -3,74 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blade Runners Mowing | We Master Your Yard</title>
+    <title>Blade Runners Mowing | Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .brand-orange { color: #FF8C00; }
-        .bg-brand-orange { background-color: #FF8C00; }
-        .border-brand-orange { border-color: #FF8C00; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans">
-
+<body>
     <nav class="sticky top-0 z-50 bg-white border-b px-6 py-4 shadow-sm">
         <div class="flex justify-between items-center max-w-7xl mx-auto">
             <div class="flex items-center gap-3">
-                <img src="logo.png" alt="Blade Runners Logo" class="h-12 w-auto">
-                <span class="font-black text-2xl uppercase tracking-tighter text-slate-900">Blade <span class="brand-orange">Runners</span></span>
+                <img src="logo.png" alt="Logo" class="nav-logo">
+                <span class="font-black text-2xl uppercase tracking-tighter">Blade <span class="text-[#FF8C00]">Runners</span></span>
             </div>
-
-            <div class="hidden md:flex space-x-8 text-sm font-bold uppercase tracking-widest text-slate-500">
-                <a href="index.html" class="brand-orange">Home</a>
-                <a href="services.html" class="hover:text-orange-500 transition">Services</a>
-                <a href="gallery.html" class="hover:text-orange-500 transition">Gallery</a>
-                <a href="pay.html" class="hover:text-orange-500 transition">Pay Bill</a>
-                <a href="contact.html" class="hover:text-orange-500 transition">Contact</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="pay.html" class="nav-link">Pay Bill</a>
+                <a href="contact.html" class="nav-link">Contact</a>
             </div>
-
-            <button onclick="toggleMenu()" class="md:hidden text-slate-900">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-            </button>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden pt-4 pb-2 space-y-4 text-center">
-            <a href="index.html" class="block font-bold uppercase text-sm brand-orange">Home</a>
-            <a href="services.html" class="block font-bold uppercase text-sm">Services</a>
-            <a href="gallery.html" class="block font-bold uppercase text-sm">Gallery</a>
-            <a href="pay.html" class="block font-bold uppercase text-sm">Pay Bill</a>
-            <a href="contact.html" class="block font-bold uppercase text-sm">Contact</a>
         </div>
     </nav>
 
-    <header class="bg-slate-900 text-white py-20 px-6">
+    <header class="bg-slate-900 text-white py-24 px-6">
         <div class="max-w-5xl mx-auto text-center">
-            <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-tight uppercase">We Master Your Yard</h1>
-            <p class="text-xl text-slate-300 mb-12 max-w-2xl mx-auto">Professional, veteran-owned lawn maintenance providing precision results for Camdenton.</p>
+            <h1 class="text-6xl md:text-8xl font-black mb-6 tracking-tight uppercase">We Master Your Yard</h1>
+            <p class="text-xl text-slate-400 mb-16 max-w-2xl mx-auto">Professional, veteran-owned lawn maintenance providing precision results for Camdenton.</p>
             
-            <div id="about" class="glass-card p-8 rounded-3xl flex flex-col md:flex-row items-center gap-8 text-left max-w-4xl mx-auto">
-                <div class="w-40 h-40 rounded-3xl overflow-hidden border-4 border-brand-orange flex-shrink-0 rotate-3">
+            <div class="glass-card p-10 rounded-3xl flex flex-col md:flex-row items-center gap-10 text-left max-w-5xl mx-auto shadow-2xl">
+                <div class="w-full md:w-64 h-64 rounded-2xl overflow-hidden border-4 border-[#FF8C00] flex-shrink-0">
                     <img src="dad.png" alt="Retired AF Master Sergeant" class="w-full h-full object-cover">
                 </div>
                 <div>
-                    <h2 class="text-2xl font-bold uppercase tracking-tight">Our Mission</h2>
+                    <h2 class="text-3xl font-bold uppercase tracking-tight">Our Mission</h2>
                     <p class="text-orange-400 font-bold text-xs uppercase tracking-widest mb-4">Retired Air Force Master Sergeant Owned</p>
-                    <p class="italic text-slate-200 leading-relaxed">"After retiring from the Air Force, I founded Blade Runners to bring military-grade discipline and a passion for lawn care to my community. We aren't just cutting grass; we are ensuring your home's legacy looks its absolute best."</p>
+                    <p class="text-lg italic text-slate-200 leading-relaxed">"After retiring from the Air Force, I founded Blade Runners to bring military-grade discipline and a passion for lawn care to my community. We aren't just cutting grass; we are ensuring your home's legacy looks its absolute best."</p>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="py-16 text-center bg-white border-t">
-        <p class="text-2xl md:text-3xl font-black italic text-slate-800 mb-8 uppercase tracking-tighter">
-            "We Don't Just Mow Your Yard..... We Master It"
-        </p>
-        <img src="logo2.png" alt="Blade Runners Master Logo" class="mx-auto h-32 w-auto">
-    </section>
-
+    <div class="footer-branding">
+        <p class="footer-slogan">"We Don't Just Mow Your Yard..... We Master It"</p>
+        <img src="logo2.png" alt="Master Logo" class="footer-logo">
+    </div>
     <footer class="py-12 text-center text-slate-400 text-xs tracking-[0.2em] bg-slate-50">
-        <p>&copy; 2026 BLADE RUNNERS MOWING COMPANY | PO BOX 1001 CAMDENTON, MO</p>
+        &copy; 2026 BLADE RUNNERS MOWING COMPANY | PO BOX 1001 CAMDENTON, MO
     </footer>
-
-    <script>function toggleMenu() { document.getElementById('mobile-menu').classList.toggle('hidden'); }</script>
 </body>
 </html>

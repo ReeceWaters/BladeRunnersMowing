@@ -1,37 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8"><title>Contact | Blade Runners</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        input, textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; }
-        .submit-btn { background: var(--blade-orange); color: white; border: none; padding: 15px; cursor: pointer; width: 100%; font-weight: bold; border-radius: 5px; }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="header-left"><img src="logo.png" class="logo-img"><div class="brand-name">Blade Runners</div></div>
-        <nav><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="pay.html">Pay Bill</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
-    </header>
-    <section>
-        <h2>Contact Us</h2>
-        <div class="content-box" style="max-width:600px; margin:0 auto;">
-            <img src="runners.png" style="width:100%; border-radius:10px; margin-bottom:20px;">
-            <form action="https://formspree.io/f/xreayvgz" method="POST">
-                <input type="text" name="name" placeholder="Name" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
-                <button type="submit" class="submit-btn">Send Message to John</button>
+<section class="py-24 px-6 max-w-5xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <img src="runners.png" alt="The Runners" class="rounded-3xl shadow-2xl rotate-[-2deg]">
+        </div>
+        <div class="bg-slate-900 p-10 rounded-[2.5rem] text-white">
+            <h2 class="text-3xl font-bold mb-6">Get A Quote</h2>
+            <form action="https://formspree.io/f/xreayvgz" method="POST" class="space-y-4">
+                <input type="text" name="name" placeholder="Name" class="w-full p-4 rounded-xl bg-slate-800 border-none text-white focus:ring-2 focus:ring-orange-500" required>
+                <input type="email" name="email" placeholder="Email" class="w-full p-4 rounded-xl bg-slate-800 border-none text-white focus:ring-2 focus:ring-orange-500" required>
+                <textarea name="message" placeholder="Address & Services Needed..." rows="4" class="w-full p-4 rounded-xl bg-slate-800 border-none text-white focus:ring-2 focus:ring-orange-500" required></textarea>
+                <button type="submit" class="w-full bg-brand-orange p-4 rounded-xl font-black uppercase tracking-widest hover:bg-orange-600 transition">Send to John</button>
             </form>
         </div>
-    </section>
-</body>
-</html>
-<div class="footer-branding">
-        <p class="slogan">"We Don't Just Mow Your Yard..... We Master It"</p>
-        <img src="logo2.png" alt="Blade Runners Master Logo" class="logo2-img">
     </div>
-
-    <footer>
-        &copy; 2026 Blade Runners Mowing | John.BladeRunners@gmail.com
-    </footer>
+</section>

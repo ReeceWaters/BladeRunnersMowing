@@ -1,18 +1,50 @@
-<section class="py-24 px-6 max-w-xl mx-auto text-center">
-    <div class="bg-white p-12 rounded-[3rem] shadow-2xl border-2 border-slate-100">
-        <h2 class="text-3xl font-black uppercase mb-8">Pay Your Bill</h2>
-        
-        <div class="mb-10">
-            <p class="font-bold text-sm text-slate-400 uppercase tracking-widest mb-4">Option 1: Venmo</p>
-            <img src="venmo.png" alt="Venmo QR" class="mx-auto w-64 h-auto rounded-2xl shadow-inner border p-2">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Bill | Blade Runners</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sticky top-0 z-50 bg-white border-b px-6 py-4 shadow-sm">
+        <div class="flex justify-between items-center max-w-7xl mx-auto">
+            <div class="flex items-center gap-3">
+                <img src="logo.png" alt="Logo" class="nav-logo">
+                <span class="font-black text-2xl uppercase tracking-tighter">Blade <span class="text-[#FF8C00]">Runners</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="pay.html" class="nav-link active-link">Pay Bill</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
         </div>
+    </nav>
 
-        <div class="border-t pt-10">
-            <p class="font-bold text-sm text-slate-400 uppercase tracking-widest mb-4">Option 2: Mail</p>
-            <p class="text-lg font-bold text-slate-800">Checks can be made out to <br><span class="brand-orange italic">Blade Runners Mowing</span></p>
-            <p class="bg-slate-50 p-4 rounded-xl mt-4 font-mono text-slate-600">PO Box 1001 <br> Camdenton, MO, 65020</p>
+    <section class="py-24 px-6 max-w-xl mx-auto">
+        <div class="bg-white p-12 rounded-[3rem] shadow-xl border text-center">
+            <h2 class="text-3xl font-black uppercase mb-10">Pay Your Bill</h2>
+            <img src="venmo.png" alt="Venmo" class="mx-auto w-64 h-auto rounded-3xl shadow-inner mb-6 p-2 border">
+            <p class="text-slate-500 font-bold mb-10 uppercase tracking-widest">Scan for Venmo</p>
+            <div class="border-t pt-10">
+                <p class="text-lg font-bold">Checks made out to <br><span class="text-[#FF8C00]">Blade Runners Mowing</span></p>
+                <div class="bg-slate-50 p-6 rounded-2xl mt-4 font-mono text-slate-600 border">
+                    PO Box 1001 <br> Camdenton, MO, 65020
+                </div>
+            </div>
+            <p class="mt-12 text-green-700 font-black text-xl">Thank You, We Appreciate Your Business!</p>
         </div>
+    </section>
 
-        <p class="mt-12 text-green-700 font-black text-xl">Thank You, We Appreciate Your Business!</p>
+    <div class="footer-branding">
+        <p class="footer-slogan">"We Don't Just Mow Your Yard..... We Master It"</p>
+        <img src="logo2.png" alt="Master Logo" class="footer-logo">
     </div>
-</section>
+    <footer class="py-12 text-center text-slate-400 text-xs tracking-[0.2em] bg-slate-50">
+        &copy; 2026 BLADE RUNNERS MOWING COMPANY
+    </footer>
+</body>
+</html>

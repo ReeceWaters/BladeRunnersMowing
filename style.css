@@ -1,37 +1,75 @@
-/* Services List Styling */
-.services-list {
-    list-style: none;
-    padding: 0;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-}
-.services-list li {
-    background: white;
-    margin-bottom: 15px;
-    padding: 20px;
-    border-left: 8px solid var(--blade-orange);
-    border-radius: 5px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+/* Blade Runners Professional Brand Styles */
+:root {
+    --brand-orange: #FF8C00;
+    --brand-dark: #0f172a; /* Slate 900 */
+    --brand-gray: #64748b; /* Slate 500 */
+    --brand-bg: #f8fafc;   /* Slate 50 */
 }
 
-/* Updated Footer with Slogan and Logo2 */
+body {
+    background-color: var(--brand-bg);
+    color: var(--brand-dark);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Glass Card Effect */
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Standardized Navigation */
+.nav-logo {
+    height: 48px; /* Fixed height for consistency */
+    width: auto;
+}
+
+.nav-link {
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--brand-gray);
+    transition: color 0.2s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--brand-orange);
+}
+
+/* Service Card Styles */
+.service-pill {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    border-left: 6px solid var(--brand-orange);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 700;
+}
+
+/* Footer Slogan Section */
 .footer-branding {
+    padding: 4rem 1.5rem;
     text-align: center;
-    padding: 40px 10%;
-    background: var(--white);
-    border-top: 4px solid var(--grass-green);
+    background: white;
+    border-top: 1px solid #e2e8f0;
 }
-.slogan {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--stone);
-    margin-bottom: 20px;
+
+.footer-slogan {
+    font-size: 1.875rem;
+    font-weight: 900;
     font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: -0.025em;
+    margin-bottom: 2rem;
 }
-.logo2-img {
-    max-width: 200px;
-    height: auto;
+
+.footer-logo {
+    height: 128px;
+    width: auto;
+    margin: 0 auto;
 }

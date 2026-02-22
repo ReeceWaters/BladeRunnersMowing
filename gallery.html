@@ -1,24 +1,56 @@
-<section class="py-24 px-6 max-w-7xl mx-auto">
-    <div class="text-center mb-16">
-        <h2 class="text-4xl font-black uppercase tracking-tight text-slate-900">The Results</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Blade Runners</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sticky top-0 z-50 bg-white border-b px-6 py-4 shadow-sm">
+        <div class="flex justify-between items-center max-w-7xl mx-auto">
+            <div class="flex items-center gap-3">
+                <img src="logo.png" alt="Logo" class="nav-logo">
+                <span class="font-black text-2xl uppercase tracking-tighter">Blade <span class="text-[#FF8C00]">Runners</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="gallery.html" class="nav-link active-link">Gallery</a>
+                <a href="pay.html" class="nav-link">Pay Bill</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-24 px-6 max-w-6xl mx-auto">
+        <h2 class="text-4xl font-black text-center uppercase mb-16">The Mastered Look</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <img src="dad2.png" class="rounded-3xl shadow-lg w-full h-96 object-cover">
+            <img src="yard.png" class="rounded-3xl shadow-lg w-full h-96 object-cover">
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center gap-8 justify-center bg-white p-10 rounded-3xl border mb-10">
+            <div class="text-center"><p class="font-bold text-slate-400 mb-2">BEFORE</p><img src="before.png" class="rounded-xl h-64 w-96 object-cover shadow-md"></div>
+            <div class="text-6xl text-[#FF8C00] font-black">➔</div>
+            <div class="text-center"><p class="font-bold text-green-600 mb-2">AFTER</p><img src="after.png" class="rounded-xl h-64 w-96 object-cover shadow-md"></div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center gap-8 justify-center bg-white p-10 rounded-3xl border">
+            <div class="text-center"><p class="font-bold text-slate-400 mb-2">BEFORE</p><img src="before2.png" class="rounded-xl h-64 w-96 object-cover shadow-md"></div>
+            <div class="text-6xl text-[#FF8C00] font-black">➔</div>
+            <div class="text-center"><p class="font-bold text-green-600 mb-2">AFTER</p><img src="after2.png" class="rounded-xl h-64 w-96 object-cover shadow-md"></div>
+        </div>
+    </section>
+
+    <div class="footer-branding">
+        <p class="footer-slogan">"We Don't Just Mow Your Yard..... We Master It"</p>
+        <img src="logo2.png" alt="Master Logo" class="footer-logo">
     </div>
-
-    <div class="space-y-12">
-        <div class="grid md:grid-cols-2 gap-8">
-            <img src="dad2.png" class="rounded-3xl shadow-lg w-full h-80 object-cover">
-            <img src="yard.png" class="rounded-3xl shadow-lg w-full h-80 object-cover">
-        </div>
-
-        <div class="flex flex-col md:flex-row items-center gap-6 justify-center bg-white p-8 rounded-3xl shadow-sm border">
-            <div class="text-center"><p class="font-bold uppercase text-xs mb-2">Before</p><img src="before.png" class="rounded-xl h-64 w-96 object-cover"></div>
-            <div class="text-5xl brand-orange font-black">➔</div>
-            <div class="text-center"><p class="font-bold uppercase text-xs mb-2 text-green-600">After</p><img src="after.png" class="rounded-xl h-64 w-96 object-cover"></div>
-        </div>
-
-        <div class="flex flex-col md:flex-row items-center gap-6 justify-center bg-white p-8 rounded-3xl shadow-sm border">
-            <div class="text-center"><p class="font-bold uppercase text-xs mb-2">Before</p><img src="before2.png" class="rounded-xl h-64 w-96 object-cover"></div>
-            <div class="text-5xl brand-orange font-black">➔</div>
-            <div class="text-center"><p class="font-bold uppercase text-xs mb-2 text-green-600">After</p><img src="after2.png" class="rounded-xl h-64 w-96 object-cover"></div>
-        </div>
-    </div>
-</section>
+    <footer class="py-12 text-center text-slate-400 text-xs tracking-[0.2em] bg-slate-50">
+        &copy; 2026 BLADE RUNNERS MOWING COMPANY
+    </footer>
+</body>
+</html>

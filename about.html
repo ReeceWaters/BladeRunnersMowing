@@ -12,8 +12,17 @@
 <script>
     function toggleMenu() {
         const menu = document.getElementById('mobile-menu');
-        // This line removes 'hidden' if it's there, or adds it if it's not
-        menu.classList.toggle('hidden');
+        if (menu) {
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+            } else {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+            }
+        } else {
+            console.error("Mobile menu element not found!");
+        }
     }
 </script>
 <body>

@@ -1,9 +1,9 @@
-/* Blade Runners Professional Brand Styles */
+/* Blade Runners Unified Professional Styles */
 :root {
     --brand-orange: #FF8C00;
-    --brand-dark: #0f172a; /* Slate 900 */
-    --brand-gray: #64748b; /* Slate 500 */
-    --brand-bg: #f8fafc;   /* Slate 50 */
+    --brand-dark: #0f172a; 
+    --brand-gray: #64748b;
+    --brand-bg: #f8fafc;
 }
 
 body {
@@ -12,16 +12,14 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-/* Glass Card Effect */
 .glass-card {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Standardized Navigation */
 .nav-logo {
-    height: 48px; /* Fixed height for consistency */
+    height: 48px;
     width: auto;
 }
 
@@ -31,27 +29,18 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     color: var(--brand-gray);
-    transition: color 0.2s;
+    transition: all 0.2s;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover {
     color: var(--brand-orange);
 }
 
-/* Service Card Styles */
-.service-pill {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-    border-left: 6px solid var(--brand-orange);
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-weight: 700;
+.active-link {
+    color: var(--brand-orange) !important;
+    border-bottom: 2px solid var(--brand-orange);
 }
 
-/* Footer Slogan Section */
 .footer-branding {
     padding: 4rem 1.5rem;
     text-align: center;
@@ -69,7 +58,7 @@ body {
 }
 
 .footer-logo {
-    height: 128px;
+    height: 120px;
     width: auto;
     margin: 0 auto;
 }

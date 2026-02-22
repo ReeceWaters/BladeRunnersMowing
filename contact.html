@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><title>Contact | Blade Runners</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input, textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; }
+        .submit-btn { background: var(--blade-orange); color: white; border: none; padding: 15px; cursor: pointer; width: 100%; font-weight: bold; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left"><img src="logo.png" class="logo-img"><div class="brand-name">Blade Runners</div></div>
+        <nav><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="pay.html">Pay Bill</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    </header>
+    <section>
+        <h2>Contact Us</h2>
+        <div class="content-box" style="max-width:600px; margin:0 auto;">
+            <img src="runners.png" style="width:100%; border-radius:10px; margin-bottom:20px;">
+            <form action="https://formspree.io/f/xreayvgz" method="POST">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+                <button type="submit" class="submit-btn">Send Message to John</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
